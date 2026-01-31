@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>아모그램 | 건강·미용·생활 정보</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 헤더 -->
+    <header class="header">
+      <div class="header-content">
+        <h1 class="logo">🌸 아모그램</h1>
+        <p class="tagline">건강하고 아름다운 일상</p>
+      </div>
+    </header>
+
+    <!-- 메인 피드 -->
+    <main class="feed">
+      <div id="posts-container" class="posts-container">
+        <!-- 게시물들이 여기에 동적으로 추가됩니다 -->
+      </div>
+    </main>
+
+    <!-- 플로팅 작성 버튼 -->
+    <button class="fab" id="openModalBtn" aria-label="새 게시물 작성">
+      ✏️
+    </button>
+  </div>
+
+  <!-- 게시물 작성 모달 -->
+  <div id="postModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>✨ 새 게시물 작성</h2>
+        <button class="close-btn" id="closeModalBtn">&times;</button>
+      </div>
+
+      <form id="postForm" class="post-form">
+        <!-- 이미지 업로드 -->
+        <div class="form-group">
+          <label>이미지 업로드 (최대 10개)</label>
+          <div class="upload-area" id="uploadArea">
+            <input
+              type="file"
+              id="imageUpload"
+              accept="image/*"
+              multiple
+              style="display: none;"
+            >
+            <div class="upload-placeholder" id="uploadPlaceholder">
+              <div class="upload-icon">📸</div>
+              <p>클릭하여 이미지 선택</p>
+              <p class="helper-text">또는 이미지를 드래그하세요</p>
+            </div>
+          </div>
+
+          <!-- 업로드된 이미지 미리보기 -->
+          <div class="image-preview-grid" id="imagePreviewGrid"></div>
+        </div>
+
+        <!-- 키워드 입력 -->
+        <div class="form-group">
+          <label for="keywords">전체 키워드 (쉼표로 구분)</label>
+          <input
+            type="text"
+            id="keywords"
+            placeholder="예: 샐러드, 건강식, 다이어트"
+            required
+          >
+          <p class="helper-text">모든 사진에 적용될 키워드를 입력하세요</p>
+        </div>
+
+        <!-- 작성자 이름 -->
+        <div class="form-group">
+          <label for="authorName">작성자 이름</label>
+          <input
+            type="text"
+            id="authorName"
+            placeholder="예: 건강러버"
+            required
+          >
+        </div>
+
+        <!-- 제출 버튼 -->
+        <div class="form-actions">
+          <button type="button" class="btn-secondary" id="cancelBtn">취소</button>
+          <button type="submit" class="btn-primary" id="generateBtn">
+            <span class="btn-text">✨ AI 캡션 생성하기</span>
+            <span class="btn-loading" style="display: none;">생성 중...</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

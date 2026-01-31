@@ -1,0 +1,23 @@
+{
+  "name": "amogram",
+  "version": "0.1.0",
+  "description": "건강·미용·생활 정보를 공유하는 인스타그램 스타일 웹페이지",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "instagram",
+    "health",
+    "beauty",
+    "lifestyle"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "vite": "^5.0.0"
+  },
+  "dependencies": {}
+}
