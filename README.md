@@ -20,9 +20,11 @@
 ## 기술 스택
 
 - **Frontend**: HTML/CSS/JS (Vite)
-- **AI**: Claude API (예정)
-- **배포**: Cloudflare Pages (예정)
+- **AI**: Claude API
+- **배포**: Cloudflare Pages
 - **데이터**: JSON 파일 (MVP)
+- **저장소**: https://github.com/yesuel1/glowslow
+- **도메인**: glowslow.com
 
 ## 개발 환경 설정
 
@@ -94,3 +96,9 @@ src/
 ## UI 무드
 
 파스텔 컬러, 부드러운 원형 UI, 귀여운 이모지로 아모레 브랜드 느낌 구현
+
+## 배포
+
+Cloudflare Pages를 통해 배포됩니다. 자세한 배포 방법은 [DEPLOYMENT.md](./DEPLOYMENT.md)를 참고하세요.
+
+**배포 URL**: https://glowslow.com
